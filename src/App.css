@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;600;700;800&display=swap");
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(227, 223, 255) 0%,
+    rgb(255, 232, 177) 100%
+  );
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Syne";
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: rgb(241, 255, 207);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  padding-top: 0.7rem;
+  margin: 32px 0;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 3px solid #000000;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.todo-input::placeholder {
+  color: #000000;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: 1px solid black;
+  background: black;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px auto;
+  color: rgb(0, 0, 0);
+  background: cyan;
+  padding: 16px;
+  border-radius: 5px;
+  width: 85%;
+  font-size: 1.3rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 0.7rem;
+  color: rgb(0, 0, 0);
+}
+
+.edit-icon {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-style: italic;
+}
